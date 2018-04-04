@@ -65,12 +65,12 @@ int main()
     	  // reads first element from the current line
     	  string sensor_type;
     	  iss >> sensor_type;
+		  float px;
+		  float py;
 
     	  if (sensor_type.compare("L") == 0) {
       	  		meas_package.sensor_type_ = MeasurementPackage::LASER;
           		meas_package.raw_measurements_ = VectorXd(2);
-          		float px;
-      	  		float py;
           		iss >> px;
           		iss >> py;
           		meas_package.raw_measurements_ << px, py;
@@ -89,6 +89,8 @@ int main()
           		meas_package.raw_measurements_ << ro,theta, ro_dot;
           		iss >> timestamp;
           		meas_package.timestamp_ = timestamp;
+          		px = ro * cos(theta);
+          		py = ro * sin(theta);
           }
           float x_gt;
     	  float y_gt;
@@ -125,7 +127,8 @@ int main()
     	  estimations.push_back(estimate);
 
     	  VectorXd RMSE = tools.CalculateRMSE(estimations, ground_truth);
-
+    	  //cout  << " " << p_x << " " << p_y << " " << v1 << " " << v2 << " " << px << " " << py << " " << x_gt << " " << y_gt << " " << vx_gt << " " << vy_gt << endl;
+    	  //cout << RMSE[0] << " " <<  RMSE[1] << " " <<  RMSE[2] << " " <<  RMSE[3] << endl;
           json msgJson;
           msgJson["estimate_x"] = p_x;
           msgJson["estimate_y"] = p_y;
