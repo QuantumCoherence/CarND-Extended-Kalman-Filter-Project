@@ -44,4 +44,4 @@ Increasing the noise value to 15 kept the error below the minimal required thres
 
 **Remarks**
 
-The largest errors occur at the begining of the turn, which is when acceleration changes the most. A larger noise level of the random model for the unknown acceleration helped better modeling the error of the trajectory estimation.
+The largest errors occur at the begining of the turn, which is when acceleration changes the most. A larger noise level of the random model for the unknown acceleration helped better modeling the error of the position and veclocity estimations.
