@@ -48,7 +48,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/media/paolo/VERSIONED BOX/EDX Courses/Enrolled/Self Driving Nanodegree Udacity/CarND-Extended-Kalman-Filter-Project/src"
+CMAKE_SOURCE_DIR = "/media/paolo/VERSIONED BOX/EDX Courses/Enrolled/Self Driving Nanodegree Udacity/CarND-Extended-Kalman-Filter-Project"
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = "/media/paolo/VERSIONED BOX/EDX Courses/Enrolled/Self Driving Nanodegree Udacity/CarND-Extended-Kalman-Filter-Project/build"
@@ -123,113 +123,113 @@ ExtendedKF/fast:
 	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/build
 .PHONY : ExtendedKF/fast
 
-FusionEKF.o: FusionEKF.cpp.o
+src/FusionEKF.o: src/FusionEKF.cpp.o
 
-.PHONY : FusionEKF.o
-
-# target to build an object file
-FusionEKF.cpp.o:
-	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/FusionEKF.cpp.o
-.PHONY : FusionEKF.cpp.o
-
-FusionEKF.i: FusionEKF.cpp.i
-
-.PHONY : FusionEKF.i
-
-# target to preprocess a source file
-FusionEKF.cpp.i:
-	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/FusionEKF.cpp.i
-.PHONY : FusionEKF.cpp.i
-
-FusionEKF.s: FusionEKF.cpp.s
-
-.PHONY : FusionEKF.s
-
-# target to generate assembly for a file
-FusionEKF.cpp.s:
-	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/FusionEKF.cpp.s
-.PHONY : FusionEKF.cpp.s
-
-kalman_filter.o: kalman_filter.cpp.o
-
-.PHONY : kalman_filter.o
+.PHONY : src/FusionEKF.o
 
 # target to build an object file
-kalman_filter.cpp.o:
-	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/kalman_filter.cpp.o
-.PHONY : kalman_filter.cpp.o
+src/FusionEKF.cpp.o:
+	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o
+.PHONY : src/FusionEKF.cpp.o
 
-kalman_filter.i: kalman_filter.cpp.i
+src/FusionEKF.i: src/FusionEKF.cpp.i
 
-.PHONY : kalman_filter.i
+.PHONY : src/FusionEKF.i
 
 # target to preprocess a source file
-kalman_filter.cpp.i:
-	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/kalman_filter.cpp.i
-.PHONY : kalman_filter.cpp.i
+src/FusionEKF.cpp.i:
+	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.i
+.PHONY : src/FusionEKF.cpp.i
 
-kalman_filter.s: kalman_filter.cpp.s
+src/FusionEKF.s: src/FusionEKF.cpp.s
 
-.PHONY : kalman_filter.s
+.PHONY : src/FusionEKF.s
 
 # target to generate assembly for a file
-kalman_filter.cpp.s:
-	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/kalman_filter.cpp.s
-.PHONY : kalman_filter.cpp.s
+src/FusionEKF.cpp.s:
+	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.s
+.PHONY : src/FusionEKF.cpp.s
 
-main.o: main.cpp.o
+src/kalman_filter.o: src/kalman_filter.cpp.o
 
-.PHONY : main.o
+.PHONY : src/kalman_filter.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/kalman_filter.cpp.o:
+	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o
+.PHONY : src/kalman_filter.cpp.o
 
-main.i: main.cpp.i
+src/kalman_filter.i: src/kalman_filter.cpp.i
 
-.PHONY : main.i
+.PHONY : src/kalman_filter.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/kalman_filter.cpp.i:
+	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.i
+.PHONY : src/kalman_filter.cpp.i
 
-main.s: main.cpp.s
+src/kalman_filter.s: src/kalman_filter.cpp.s
 
-.PHONY : main.s
+.PHONY : src/kalman_filter.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/kalman_filter.cpp.s:
+	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.s
+.PHONY : src/kalman_filter.cpp.s
 
-tools.o: tools.cpp.o
+src/main.o: src/main.cpp.o
 
-.PHONY : tools.o
+.PHONY : src/main.o
 
 # target to build an object file
-tools.cpp.o:
-	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/tools.cpp.o
-.PHONY : tools.cpp.o
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-tools.i: tools.cpp.i
+src/main.i: src/main.cpp.i
 
-.PHONY : tools.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-tools.cpp.i:
-	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/tools.cpp.i
-.PHONY : tools.cpp.i
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-tools.s: tools.cpp.s
+src/main.s: src/main.cpp.s
 
-.PHONY : tools.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-tools.cpp.s:
-	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/tools.cpp.s
-.PHONY : tools.cpp.s
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/tools.o: src/tools.cpp.o
+
+.PHONY : src/tools.o
+
+# target to build an object file
+src/tools.cpp.o:
+	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/src/tools.cpp.o
+.PHONY : src/tools.cpp.o
+
+src/tools.i: src/tools.cpp.i
+
+.PHONY : src/tools.i
+
+# target to preprocess a source file
+src/tools.cpp.i:
+	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/src/tools.cpp.i
+.PHONY : src/tools.cpp.i
+
+src/tools.s: src/tools.cpp.s
+
+.PHONY : src/tools.s
+
+# target to generate assembly for a file
+src/tools.cpp.s:
+	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/src/tools.cpp.s
+.PHONY : src/tools.cpp.s
 
 # Help Target
 help:
@@ -240,18 +240,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ExtendedKF"
-	@echo "... FusionEKF.o"
-	@echo "... FusionEKF.i"
-	@echo "... FusionEKF.s"
-	@echo "... kalman_filter.o"
-	@echo "... kalman_filter.i"
-	@echo "... kalman_filter.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... tools.o"
-	@echo "... tools.i"
-	@echo "... tools.s"
+	@echo "... src/FusionEKF.o"
+	@echo "... src/FusionEKF.i"
+	@echo "... src/FusionEKF.s"
+	@echo "... src/kalman_filter.o"
+	@echo "... src/kalman_filter.i"
+	@echo "... src/kalman_filter.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/tools.o"
+	@echo "... src/tools.i"
+	@echo "... src/tools.s"
 .PHONY : help
 
 

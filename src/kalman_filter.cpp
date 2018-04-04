@@ -47,7 +47,7 @@ void KalmanFilter::UpdateEKF(const VectorXd &z) {
 		y[1] = y[1] + TWOPI;
 		//cout << "< " << y[1] << " ";
 	}
-	cout << endl;
+	//cout << endl;
 	// normalize y
     try {
     	Hj_ = tools.CalculateJacobian(x_);
